@@ -1,0 +1,11 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  <ul class="list-unstyled">
+    {{ range $index, .Paginator.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </ul>
+</div>
+{{ partial "footer.html" . }}

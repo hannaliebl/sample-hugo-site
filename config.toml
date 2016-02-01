@@ -1,0 +1,9 @@
+# .Site config
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Test Hugo Site"
+description = "Sample description"
+pluralizelisttitles = false
+
+[author]
+  name = "Hanna Liebl"
