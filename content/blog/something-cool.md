@@ -3,7 +3,7 @@ categories = ["Category 2"]
 date = "2016-01-31T20:40:17-08:00"
 draft = false
 tags = ["Tag 1", "Tag 4"]
-title = "something cool"
+title = "Something Cool I Wanted to Write About"
 
 +++
 

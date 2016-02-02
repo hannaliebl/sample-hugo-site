@@ -1,7 +1,7 @@
 +++
 date = "2016-01-19T22:28:15-08:00"
 draft = false
-title = "first"
+title = "First Post"
 categories = ["Category 1"]
 tags = ["Tag 1", "Tag 2", "Tag 3"]
 +++
