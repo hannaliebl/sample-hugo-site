@@ -1,11 +1,24 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 <div class="container">
-  <h1>{{ .Title }}</h1>
-  <ul class="list-unstyled">
-    {{ range $index, .Paginator.Pages }}
-      {{ .Render "li" }}
-    {{ end }}
-  </ul>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ .Title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="list-unstyled">
+        {{ range $index, .Paginator.Pages }}
+          {{ .Render "li" }}
+        {{ end }}
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <aside>
+        {{ partial "blog-sidebar.html" . }}
+      </aside>
+    </div>
+  </div>
 </div>
 {{ partial "footer.html" . }}

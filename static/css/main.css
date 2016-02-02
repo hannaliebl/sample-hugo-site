@@ -1,2 +1,31 @@
+body {
+  color: #535353; }
+
+a {
+  color: #2d81b6; }
+
 .navbar-reverse {
-  background: #aaeaff; }
+  color: #ededed;
+  background: #426b85; }
+  .navbar-reverse a {
+    color: #ededed; }
+
+.page-body {
+  padding: 0 0 40px 0; }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #5386a7; }
+
+.post-title {
+  font-weight: 700; }
+
+.page-footer {
+  padding: 20px 0 15px 0;
+  color: #ededed;
+  background: #426b85; }
+  .page-footer p {
+    font-weight: 200; }
+  .page-footer a {
+    color: #c0ddef; }

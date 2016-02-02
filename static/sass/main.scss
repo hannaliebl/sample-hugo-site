@@ -1,3 +1,52 @@
+// colors
+$footerColor: rgb(66, 107, 133);
+$headerColor: rgb(66, 107, 133);
+
+$reverseText: rgb(237, 237, 237);
+$primaryText: rgb(83, 83, 83);
+$link: rgb(45, 129, 182);
+$footerLink: lighten($link, 40%);
+
+// fonts
+
+body {
+  color: $primaryText;
+}
+
+a {
+  color: $link;
+}
+
 .navbar-reverse {
-  background: rgb(170, 234, 255);
+  color: $reverseText;
+  background: $headerColor;
+  a {
+    color: $reverseText;
+  }
+}
+
+.page-body {
+  padding: 0 0 40px 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: lighten($headerColor, 10%);
+}
+
+.post-title {
+  font-weight: 700;
+}
+
+.page-footer {
+  padding: 20px 0 15px 0;
+  color: $reverseText;
+  background: $footerColor;
+  p {
+    font-weight: 200;
+  }
+  a {
+    color: $footerLink;
+  }
 }
