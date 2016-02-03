@@ -1,8 +1,14 @@
 body {
-  color: #535353; }
+  color: #535353;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
 
 a {
   color: #2d81b6; }
+  a:hover {
+    color: #6eb1db;
+    text-decoration: none; }
 
 .navbar-reverse {
   color: #ededed;
@@ -18,8 +24,20 @@ a {
   text-decoration: none;
   background-color: #5386a7; }
 
-.post-title {
+.page-title {
   font-weight: 700; }
+
+.post-title {
+  font-weight: 600; }
+
+.post-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 6px;
+  margin: 0 2px;
+  border-radius: 10px;
+  background: #2d81b6;
+  color: #fff; }
 
 .page-footer {
   padding: 20px 0 15px 0;

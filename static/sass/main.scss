@@ -8,13 +8,22 @@ $link: rgb(45, 129, 182);
 $footerLink: lighten($link, 40%);
 
 // fonts
+$sansSerif: 'Titillium Web', sans-serif;
+
 
 body {
   color: $primaryText;
+  font-family: $sansSerif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 a {
   color: $link;
+  &:hover {
+    color: lighten($link, 20%);
+    text-decoration: none;
+  }
 }
 
 .navbar-reverse {
@@ -35,8 +44,22 @@ a {
   background-color: lighten($headerColor, 10%);
 }
 
-.post-title {
+.page-title {
   font-weight: 700;
+}
+
+.post-title {
+  font-weight: 600;
+}
+
+.post-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 6px;
+  margin: 0 2px;
+  border-radius: 10px;
+  background: $link;
+  color: #fff;
 }
 
 .page-footer {

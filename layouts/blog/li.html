@@ -1,7 +1,12 @@
 <article>
-  <h2 class="post-title"><a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a></h2>
+  <h2 class="post-title">
+    <a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a>
+  </h2>
   <span class="post-date">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+  {{ range .Params.tags }}
+    <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+  {{ end }}
   <p>{{ .Summary }}</p>
-  {{ if .Truncated }}<a class="moretag" href="{{ .Permalink }}">Read More <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>{{ end }}
+  {{ if .Truncated }}<a class="moretag" href="{{ .Permalink }}">Read More...{{ end }}
   <hr class="divider">
 </article>
