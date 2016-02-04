@@ -1,30 +1,28 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
-<div class="container">
-  <section class="page-body">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="page-title">{{ .Title }}</h1>
-        <h3 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h3>
-        {{ range .Params.tags }}
-          <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
-        {{ end }}
-        {{ range .Params.categories }}
-          #<a href="/categories/{{ . | urlize }}">{{ . }}</a>&nbsp;
-        {{ end }}
-      </div>
+<div class="container page-body">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-title">{{ .Title }}</h1>
+      <span class="post-date h4">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+      <span class="demi-word">in</span>
+      {{ range .Params.categories }}
+        <a href="/categories/{{ . | urlize }}"><span class="h4">{{ . }}</span></a>
+      {{ end }}
+      <span class="demi-word">tags:</span>
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+      {{ end }}
     </div>
-    <div class="row">
-      <div class="col-md-8">
-        <article id="content">
-          {{ .Content }}
-        </article>
-      </div>
-      <div class="col-md-4">
-        <aside>
-          {{ partial "blog-sidebar.html" . }}
-        </aside>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 article-body">
+      {{ .Content }}
+    </div>
+    <div class="col-md-4">
+      <aside>
+        {{ partial "blog-sidebar.html" . }}
+      </aside>
     </div>
   </div>
 </div>
