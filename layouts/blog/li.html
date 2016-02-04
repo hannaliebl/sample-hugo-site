@@ -1,12 +1,17 @@
-<article>
+<article class="article-preview">
   <h2 class="post-title">
     <a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a>
   </h2>
-  <span class="post-date">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+  <span class="post-date h4">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+  <span class="demi-word">in</span>
+  {{ range .Params.categories }}
+    <a href="/categories/{{ . | urlize }}"><span class="h4">{{ . }}</span></a>
+  {{ end }}
+  <span class="demi-word">tags:</span>
   {{ range .Params.tags }}
     <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
   {{ end }}
-  <p>{{ .Summary }}</p>
-  {{ if .Truncated }}<a class="moretag" href="{{ .Permalink }}">Read More...{{ end }}
+  <p class="preview-body">{{ .Summary }}</p>
+  {{ if .Truncated }}<a class="moretag" href="{{ .Permalink }}">Read More...{{ end }}</a>
   <hr class="divider">
 </article>

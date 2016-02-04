@@ -5,6 +5,7 @@ $headerColor: rgb(66, 107, 133);
 $reverseText: rgb(237, 237, 237);
 $primaryText: rgb(83, 83, 83);
 $link: rgb(45, 129, 182);
+$tag: rgb(85, 121, 144);
 $footerLink: lighten($link, 40%);
 
 // fonts
@@ -52,14 +53,37 @@ a {
   font-weight: 600;
 }
 
+.demi-word {
+  display: inline-block;
+  line-height: 1;
+  margin: 0 2px;
+  font-size: 15px;
+  border-bottom: 1px solid lighten($primaryText, 20%);
+}
+
 .post-tag {
   display: inline-block;
   font-size: 12px;
   padding: 2px 6px;
   margin: 0 2px;
   border-radius: 10px;
-  background: $link;
+  background: $tag;
   color: #fff;
+  &:hover {
+    background: lighten($tag, 20%);
+  }
+}
+
+.preview-body {
+  margin-top: 16px;
+}
+
+.divider {
+  border-color: lighten($primaryText, 30%);
+}
+
+.article-preview:last-child hr.divider {
+  opacity: 0;
 }
 
 .page-footer {

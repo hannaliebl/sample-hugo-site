@@ -30,14 +30,32 @@ a {
 .post-title {
   font-weight: 600; }
 
+.demi-word {
+  display: inline-block;
+  line-height: 1;
+  margin: 0 2px;
+  font-size: 15px;
+  border-bottom: 1px solid #868686; }
+
 .post-tag {
   display: inline-block;
   font-size: 12px;
   padding: 2px 6px;
   margin: 0 2px;
   border-radius: 10px;
-  background: #2d81b6;
+  background: #557990;
   color: #fff; }
+  .post-tag:hover {
+    background: #8eabbd; }
+
+.preview-body {
+  margin-top: 16px; }
+
+.divider {
+  border-color: #a0a0a0; }
+
+.article-preview:last-child hr.divider {
+  opacity: 0; }
 
 .page-footer {
   padding: 20px 0 15px 0;
