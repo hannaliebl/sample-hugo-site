@@ -1,1 +1,11 @@
-<p>Sidebar!</p>
+<div class="well">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Categories</h2>
+    </div>
+    <div class="list-group">
+      {{ range first 10 .Site.Taxonomies.categories.ByCount }}
+        <a href="/categories/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </div>
