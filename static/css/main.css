@@ -24,8 +24,37 @@ a {
   text-decoration: none;
   background-color: #5386a7; }
 
-.page-title {
-  font-weight: 700; }
+.featured-container {
+  height: 250px;
+  width: 100%;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center; }
+  .featured-container .well {
+    padding: 10px;
+    background: transparent;
+    border: none; }
+  .featured-container h1 {
+    font-size: 22px;
+    font-weight: 600; }
+  .featured-container:hover {
+    opacity: 0.8; }
+  .featured-container .post-tag {
+    background: transparent;
+    border: 2px solid #fff; }
+    .featured-container .post-tag:hover {
+      background: transparent; }
+
+.gradient-overlay {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */ }
 
 .post-title {
   font-weight: 600; }

@@ -8,3 +8,8 @@ preserveTaxonomyNames = true
 
 [author]
   name = "Hanna Liebl"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  featured = "featured"

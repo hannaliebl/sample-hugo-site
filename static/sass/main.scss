@@ -45,8 +45,40 @@ a {
   background-color: lighten($headerColor, 10%);
 }
 
-.page-title {
-  font-weight: 700;
+.featured-container {
+  height: 250px;
+  width: 100%;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  .well {
+    padding: 10px;
+    background: transparent;
+    border: none;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  .post-tag {
+    background: transparent;
+    border: 2px solid #fff;
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.gradient-overlay {
+  background: -webkit-linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 .post-title {
