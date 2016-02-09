@@ -86,6 +86,21 @@ a {
 .article-preview:last-child hr.divider {
   opacity: 0; }
 
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #426b85;
+  border-color: #426b85; }
+
+.pagination > li > a, .pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #2d81b6;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+
 .page-footer {
   padding: 20px 0 15px 0;
   color: #ededed;
